@@ -33,14 +33,14 @@ Automatically deploy servers and Optimize the shadowsocks server on Linux.
 ### Download
 
 ```bash
-# wget https://raw.githubusercontent.com/Vndroid/shadowsocks-install/master/shadowsocks.sh
-# chmod +x shadowsocks.sh
+wget https://raw.githubusercontent.com/Vndroid/shadowsocks-install/master/shadowsocks.sh
+chmod +x shadowsocks.sh
 ```
 
 ### Install
 
 ```bash
-# ./shadowsocks.sh install 2>&1 | tee shadowsocks.log
+./shadowsocks.sh install 2>&1 | tee shadowsocks.log
 ```
 
 > Notice: Must be as root user run this command.
@@ -48,7 +48,7 @@ Automatically deploy servers and Optimize the shadowsocks server on Linux.
 ### Uninstall
 
 ```bash
-# ./shadowsocks.sh uninstall
+./shadowsocks.sh uninstall
 ```
 
 ### Configure and start the service
@@ -56,31 +56,31 @@ Automatically deploy servers and Optimize the shadowsocks server on Linux.
 Edit the configuration file
 
 ```bash
-# vi /etc/shadowsocks.json
+vi /etc/shadowsocks.json
 ```
 
 Start the service via sysvinit
 
 ```bash
-# /etc/init.d/shadowsocks start
+/etc/init.d/shadowsocks start
 ```
 
 Stop the service via sysvinit
 
 ```bash
-# /etc/init.d/shadowsocks stop
+/etc/init.d/shadowsocks stop
 ```
 
 Check service status
 
 ```bash
-# /etc/init.d/shadowsocks status
+/etc/init.d/shadowsocks status
 ```
 
 View the shadowsocks server log
 
 ```bash
-# tail -f /var/log/shadowsocks.log
+tail -f /var/log/shadowsocks.log
 ```
 
 ## Report issues
